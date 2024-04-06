@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-13</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .drop-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+
+        }
+
+        .drop-content a {
+            text-decoration: none;
+            display: block;
+        }
+
+        .drop-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .drop-content {
+            display: block;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        /* Style the submenu content */
+        .submenu-content {
+            display: none;
+            position: absolute;
+        }
+
+        /* Show the submenu content on hover */
+        .dropdown-submenu:hover .submenu-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">DropDown</button>
+        <div class="drop-content">
+            <a href="#">Option1</a>
+            <a href="#">Option2</a>
+            <div class="dropdown-submenu">
+                <a href="#">nested drop</a>
+                <div class="submenu-content">
+                    <a href="#">Content1</a>
+                    <a href="#">Content2</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
