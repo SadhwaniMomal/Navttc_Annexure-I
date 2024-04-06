@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task06</title>
     <style>
-        div {
-            margin: 15px;
+        table,
+        td,
+        tr,
+        th {
+            border: 1px solid;
+            padding: 5px;
         }
 
-        form {
-            border: 2px solid red;
+
+
+        .one {
             text-align: center;
         }
 
-        form,
-        input,
-        option {
-            padding: 15px;
+        .two {
+            text-align: end;
         }
     </style>
 </head>
@@ -28,25 +31,115 @@
         Dropdown
         List must contain 7 Countries in Ascending Order but
         when form is loaded, by default Pakistan is Selected.</h1>
-    <form action="">
-        <div>
-            <label for="">Select country</label>
+    <hr>
+    <table>
 
-        </div>
-        <div>
-            <select>
-                <option value="US">US</option>
-                <option value="pakistan" selected>pakistan</option>
-                <option value="quetta">quetta</option>
-                <option value="Multan">Multan</option>
-            </select>
-        </div>
-        <div>
-            <input type="submit" value="submit">
+        <form action="#">
 
-        </div>
+            <tr>
+                <th colspan="2" class="one">Report Table </th>
+            </tr>
 
-    </form>
+            <tr>
+                <th colspan="2" class="one" style="background-color: rgb(26, 225, 255);">INFORMATION FORM</th>
+            </tr>
+
+            <tr>
+                <td class="two">Name</td>
+                <td>
+                    <input id="name" type="text">
+                    <br>
+                    <label for="name">Enter Your Full Name</label>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td class="two">Email</td>
+                <td>
+                    <input id="name" type="email">
+                    <br>
+                    <label for="name">Enter An Internet Contact Address</label>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td class="two">Password</td>
+                <td>
+                    <input id="name" type="password">
+                    <br>
+                    <label for="name">Enter A Code to Identify You</label>
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="two">Address</td>
+                <td>
+                    <input id="name" type="text">
+                    <br>
+                    <label for="name">Complete Address</label>
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="two">Country</td>
+                <td>
+                    <select>
+                        <option value="US">US</option>
+                        <option value="Pakistan" selected>Pakistan</option>
+                        <option value="UK">UK</option>
+                        <option value="Quetta">Quetta</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="two">Gender</td>
+                <td>
+                    <input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+                </td>
+            </tr>
+
+            <tr>
+                <td class="two">Hobbies</td>
+                <td>
+                    <input type="checkbox">Reading <br>
+                    <input type="checkbox">Listening Music <br>
+                    <input type="checkbox">Gardening <br>
+                    <input type="checkbox">Swimming <br>
+                    CHECK ALL THAT APPLY
+                </td>
+            </tr>
+
+            <tr>
+                <td class="two">Your Site</td>
+                <td>
+                    <input type="text" placeholder="https://"><br>
+                    <label for="">Provide Your Website</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="two">Other Infromation About You</td>
+                <td>
+                    <textarea cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="SEND IN MY REPORT"></td>
+                <td><input type="reset" value="ERASE REPORT FORM"></td>
+            </tr>
+
+        </form>
+
+    </table>
 
 
 </body>
