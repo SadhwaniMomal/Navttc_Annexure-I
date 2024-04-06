@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(15, 84, 126);
+}
+
+.main_sign {
+  background-color: white;
+  width: 302px;
+  height: 430px;
+  padding: 15px;
+  margin: 15px 450px;
+  border-radius: 5px;
+}
+
+.main_sign h2,
+p {
+  text-align: center;
+}
+
+.main_sign input,
+.main_sign label {
+  margin: 1px 32px;
+  width: 200px;
+}
+
+.main_sign input {
+  margin-bottom: 10px;
+}
+
+.content {
+  color: #fff;
+}
+
+.content a {
+  color: aquamarine;
+}
+
+input[type="button"] {
+  color: #fff;
+  background-color: rgb(58, 114, 96);
+  border: none;
+  font-size: 15pt;
+  width: 210px;
+  border-radius: 5px;
+}

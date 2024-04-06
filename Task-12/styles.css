@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(15, 84, 126);
+}
+
+/* index page css starting */
+.main_page {
+  border: 2px solid wheat;
+  background-color: rgb(125, 202, 228);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  width: 30%;
+  height: 85%;
+  padding: 30px;
+  text-align: center;
+  margin: 80px 350px;
+}
+
+.main_page a {
+  text-decoration: none;
+}
+
+.main_page input {
+  padding: 5px;
+  color: black;
+  background-color: aquamarine;
+  border: none;
+  width: 25%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* index page css Ending */
