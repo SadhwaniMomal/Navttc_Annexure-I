@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            margin-top: 5px;
+            margin-left: 660px;
+            padding: 25px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 15pt;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 200px;
+            color: peru;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button>Month Here</button>
+    <h1></h1>
+    <script>
+        let btn = document.querySelector('button')
+        let Text = document.querySelector('h1')
+        let Months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        btn = addEventListener('click', () => {
+            for (i = 0; i < Months.length; i++) {
+                Text.textContent += Months[i] + " " + " , " + " ";
+            }
+
+        })
+    </script>
+
+</body>
+
+</html>
