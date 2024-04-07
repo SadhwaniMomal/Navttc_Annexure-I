@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            margin-top: 5px;
+            margin-left: 660px;
+            padding: 25px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 15pt;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 200px;
+            color: peru;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Show Here</h1>
+    <button>Check Current Day</button>
+    <script>
+        let Showbtn = document.querySelector('button');
+        let showResult = document.querySelector('h1');
+        Showbtn = addEventListener('click', () => {
+            let currentMonth = new Date().getDay();
+            let CurrentDay;
+            switch (currentMonth) {
+                case 0:
+                    CurrentDay = 'Sunday'
+                    break;
+                case 1:
+                    CurrentDay = 'Monday'
+                    break;
+                case 2:
+                    CurrentDay = 'Tuesday'
+                    break;
+                case 3:
+                    CurrentDay = 'Wednesday'
+                    break;
+                case 4:
+                    CurrentDay = 'Thursday'
+                    break;
+                case 5:
+                    CurrentDay = 'Friday'
+                    break;
+                case 6:
+                    CurrentDay = 'Saturday'
+                    break;
+                default:
+                    CurrentDay = "unknown"
+            }
+            showResult.textContent = "Today is" + " " + CurrentDay;
+
+        })
+
+
+
+    </script>
+</body>
+
+</html>
