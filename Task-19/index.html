@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 250px;
+
+        }
+
+        button {
+            margin-left: 700px;
+            padding: 20px;
+            border-radius: 5px;
+            border: none;
+            color: aliceblue;
+            background-color: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Show Here</h1>
+    <button>Click Here</button>
+    <script>
+        let btnshow = document.querySelector('button');
+        let OutputShow = document.querySelector('h1');
+        let GM = "Good Morning";
+        let GA = "Good Afternoon"
+        let Pressbtn = new Date().getHours();
+        btnshow.addEventListener('click', () => {
+            if (Pressbtn < 12) {
+                OutputShow.textContent = GM + " ";
+            } else {
+                OutputShow.textContent = GA + " ";
+            }
+        });
+    </script>
+</body>
+
+</html>
