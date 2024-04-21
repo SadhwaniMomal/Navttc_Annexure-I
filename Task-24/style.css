@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  /* margin-top: 150px; */
+}
+
+#show {
+  background-color: transparent;
+  color: palevioletred;
+  padding: 15px;
+  font-size: 25px;
+  border: 1px solid palevioletred;
+  cursor: pointer;
+  margin-left: 600px;
+}
+
+#hide {
+  background-color: transparent;
+  color: palevioletred;
+  padding: 15px;
+  font-size: 25px;
+  border: 1px solid palevioletred;
+  cursor: pointer;
+}
+
+#show:hover,
+#hide:hover {
+  background-color: palevioletred;
+  color: white;
+}
